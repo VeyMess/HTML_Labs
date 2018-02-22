@@ -1,0 +1,46 @@
+<html>
+    <script>
+        function Quest()
+        {
+            while(true)
+            {
+                var res = prompt("В каком году основана Москва?","")
+                if(res==1147)
+                {
+                    alert("Правильно");
+                    return false;
+                }
+                else if(res<1147)
+                    alert("Позже");
+                else if(res>1147)
+                    alert("Раньше");
+            }
+        }
+        function Summ()
+        {
+            var counter=1;
+            var sum =0;
+            while(counter<=10)
+            {
+                sum += counter;
+                alert("Сумма " + counter + " чисел = " + sum);
+                counter++;
+            }
+        }
+        function Counter()
+        {
+            var str ="";
+            for(var i=1;i<=10;i++)
+            {
+                str += i + " ";
+            }
+            alert(str);
+        }       
+    </script>
+    <head>
+
+    </head>
+    <body onload="Quest();Summ();Counter();">
+        
+    </body>
+</html>
