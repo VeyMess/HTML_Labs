@@ -1,0 +1,26 @@
+<html>
+    <script>
+        function Summ()
+        {
+            var answer = parseInt(document.Form1.firstTXT.value) + parseInt(document.Form1.secondTXT.value);
+            alert(answer);
+        }
+    </script>
+    <head>
+    </head>
+    <body>
+        <form name="Form1">
+            <div>
+                Number1
+                <input type="text" name="firstTXT" >
+            </div>
+            <div>
+                Number2
+                <input type="text" name="secondTXT">
+            </div>
+            <div>
+                <input type="button" onclick="Summ()" value="Summarise">
+            </div>
+        </form>
+    </body>
+</html>
