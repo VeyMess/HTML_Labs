@@ -7,26 +7,24 @@ mas[3]="Серпухов";
 mas[4]="Подольск";
 var counter=0;
 
+
+
 function ShowSorts()
 {
     switch(counter)
     {
         case 0:
             counter++;
-            document.write(mas);
-            break;
+            return mas;
         case 1:
             counter++;
-            document.write(mas.sort());
-            break;
+            return mas.sort();
         case 2:
             counter++;
-            document.write(mas.sort().reverse());
-            break;
+            return mas.sort().reverse();
         case 3:
             counter++;
-            document.write(mas.sort(SortLength()));
-            break;
+            return mas.sort(SortLength());
         default:
             break;
     }
@@ -34,12 +32,8 @@ function ShowSorts()
 
 function SortLength(a,b)
 {
-    if(a < b) return -1;
-    else if(a>b) return 1;
-    else if(a==b) return 0;
+    if(a.length < b.length) return -1;
+    else if(a.length>b.length) return 1;
+    else if(a.length==b.length) return 0;
 }
 
-function FUCKYOUBITCH()
-{
-    document.writeln(counter);
-}
